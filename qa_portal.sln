@@ -1,0 +1,13 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "qa_portal", "app\", "EAC856F4-495C-4250-844A-3575F3AD8FD7"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code On Time Items", "Code On Time Items", "{3CDF6D6C-BA9B-4338-A222-289B258AE749}"
+	ProjectSection(SolutionItems) = preProject
+		ClientLibrary.es-MX.txt = ClientLibrary.es-MX.txt
+		DataAquarium.Project.xml = DataAquarium.Project.xml
+		DataAquarium.Version.xml = DataAquarium.Version.xml
+	EndProjectSection
+EndProject
