@@ -50,10 +50,10 @@ jobs:
         codeontime -refresh C:\actions-runner\_work\COT-deploy-QA\COT-deploy-QA -DbConnection "Data Source=teamqa.database.windows.net;Initial Catalog=teamqa-bd;Persist Security Info=True;User ID=team-qa-admin;Password=4dministrad0r$;" -dbprovider "sqlclient"
       working-directory: 'C:\Program Files (x86)\Code OnTime LLC\Code OnTime Generator' 
 
-    # # Step 6: Copy NReco.PdfGenerator.dll to WebSite bin
-    # - name: Copy NReco.PdfGenerator.dll to WebSite bin
-    #   run: |
-    #     cp "C:\actions-runner\_work\NReco.PdfGenerator.dll" "C:\actions-runner\_work\COT-deploy-QA\COT-deploy-QA\WebSite\bin"
+    # Step 6: Copy NReco.PdfGenerator.dll to WebSite bin
+    - name: Copy Microsoft.SqlServer.Types.dll to WebSite bin
+      run: |
+        cp "C:\actions-runner\_work\Microsoft.SqlServer.Types.dll" "C:\actions-runner\_work\COT-deploy-QA\COT-deploy-QA\WebSite\bin"
 
     # Step 7: Publish the website using ASP.NET Compiler
     - name: Publish WebSite
