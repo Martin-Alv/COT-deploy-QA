@@ -53,6 +53,7 @@ jobs:
     # Step 6: Copy NReco.PdfGenerator.dll to WebSite bin
     - name: Copy Microsoft.SqlServer.Types.dll to WebSite bin
       run: |
+        New-Item -ItemType Directory -Path "C:\actions-runner\_work\COT-deploy-QA\COT-deploy-QA\WebSite\bin" -Force
         cp "C:\actions-runner\_work\Microsoft.SqlServer.Types.dll" "C:\actions-runner\_work\COT-deploy-QA\COT-deploy-QA\WebSite\bin\"
 
     # Step 7: Publish the website using ASP.NET Compiler
